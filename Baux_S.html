@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtre Sentier</title>
+  <style>
+    /* Style de base */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 300px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: left; /* Alignement à gauche */
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      margin: 0;
+      color: #007bff;
+    }
+
+    .header .back-btn {
+      font-size: 24px;
+      color: #007bff;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin: 20px 0 10px;
+      color: #333;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button-group.two-per-row {
+      justify-content: flex-start;
+    }
+
+    .filter-button {
+      padding: 10px 15px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      color: #333;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.3s ease;
+      width: calc(50% - 5px); /* Deux boutons par ligne */
+      text-align: center;
+    }
+
+    .filter-button.full-width {
+      width: 100%; /* Bouton pour ligne unique */
+    }
+
+    .filter-button:hover {
+      background-color: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+
+    /* Style pour mobile */
+    @media (max-width: 400px) {
+      .button-group {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <span class="back-btn">&larr;</span>
+    <h1>Filtrer</h1>
+  </div>
+
+<!--   <h2>Type de projet</h2>
+  <div class="button-group">
+    <button class="filter-button">Sentier non motorisé</button>
+    <button class="filter-button">Projet gouvernemental</button>
+    <button class="filter-button">Projet du milieu</button>
+  </div>
+ -->
+  <h2>Baux S</h2>
+  <div class="button-group two-per-row">
+    <button class="filter-button">Fins agricoles complémentaires ou accessoires à un usage principal (sup. max. 1000 mc)</button>
+    <button class="filter-button">Fins commerciales</button>
+    <button class="filter-button">Fins commerciales complémentaires ou accessoires à un usage principal (sup. max. 1000 mc)</button>
+    <button class="filter-button">Fins commerciales récréatives ou touristiques sans hébergement</button>
+    <button class="filter-button">Fins communautaires, colonie de vacances</button>
+    <button class="filter-button">Fins complémentaires ou accessoires à un sentier récréatif communautaire sans but lucratif</button>
+    <button class="filter-button">fins d'abri sommaire en forêt (plancher de 20 mc)</button>
+    <button class="filter-button">Fins d'abri sommaire en forêt (plancher de 30 mc)</button>
+    
+    
+<!--     <button class="filter-button">Ski hors piste</button>
+    <button class="filter-button">Traîneau à chien</button>
+    <button class="filter-button">Trottinette des neiges</button>
+    <button class="filter-button">Vélo</button>
+    <button class="filter-button full-width">Autres usages</button> -->
+  </div>
+</div>
+
+</body>
+</html>

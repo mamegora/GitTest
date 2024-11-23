@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtre Sentier</title>
+  <style>
+    /* Style de base */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 300px;
+      background-color: #fff;
+      border-radius: 3px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: left; /* Alignement à gauche */
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      margin: 0;
+      color: #007bff;
+    }
+
+    .header .back-btn {
+      font-size: 24px;
+      color: #007bff;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin: 20px 0 10px;
+      color: #333;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button-group.two-per-row {
+      justify-content: flex-start;
+    }
+
+    .filter-button {
+      padding: 10px 15px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      color: #333;
+      cursor: pointer;
+      font-size: 11px;
+      transition: all 0.3s ease;
+      width: calc(50% - 5px); /* Deux boutons par ligne */
+      text-align: center;
+    }
+
+    .filter-button.full-width {
+      width: 100%; /* Bouton pour ligne unique */
+    }
+
+    .filter-button:hover {
+      background-color: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+
+    /* Style pour mobile */
+    @media (max-width: 400px) {
+      .button-group {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <span class="back-btn">&larr;</span>
+    <h1>Filtrer</h1>
+  </div>
+
+  <!-- <h2>Type de projet</h2>
+  <div class="button-group">
+    <button class="filter-button">Sentier non motorisé</button>
+    <button class="filter-button">Projet gouvernemental</button>
+    <button class="filter-button">Projet du milieu</button>
+  </div> -->
+
+  <h2>Délégataire</h2>
+  <div class="button-group two-per-row">
+    <button class="filter-button">Communauté maritime des Iles-de-la-Madeleine</button>
+    <button class="filter-button">MRC Antoine-Labelle</button>
+    <button class="filter-button">MRC Charlevoix</button>
+    <button class="filter-button">MRC Charlevoix Est</button>
+    <button class="filter-button">MRC Cote-de-Beaupré</button>
+    <button class="filter-button">MRC de Bécancour</button>
+    <button class="filter-button">MRC de La Haute-Cote-Nord</button>
+    <button class="filter-button">MRC de la Matane</button>
+    <button class="filter-button">MRC de la Matapédias</button>
+    <button class="filter-button">MRC de l’Érable</button>
+    <button class="filter-button">MRC de Manicouagan</button>
+    <button class="filter-button">MRC de la Matawinie</button>
+    <button class="filter-button">MRC de Papineau</button>
+    <button class="filter-button">MRC de Témiscouata</button>
+    <button class="filter-button">MRC Lac Saint-Jean Est</button>
+    <button class="filter-button">MRC La Mitis</button>
+    <button class="filter-button">MRC La Vallée-de-la-Gatineau</button>
+    <button class="filter-button">MRC Le Domaine-du-Roy</button>
+    <button class="filter-button">MRC Le Fjord-du-Saguenay</button>
+    <button class="filter-button">MRC Les Basques</button>
+    <button class="filter-button">MRC Les Laurentides</button>
+    <button class="filter-button">MRC Les Pays-d’en-Haut</button>
+    <button class="filter-button">MRC Maria-Chapdelaine</button>
+    <button class="filter-button">MRC Pontiac</button>
+    <button class="filter-button">MRC Rimouski-Neigette</button>
+    <button class="filter-button">MRC Rivière-du-Loup</button>
+    <button class="filter-button">Ville de Saguenay</button>
+  </div>
+</div>
+
+</body>
+</html>
